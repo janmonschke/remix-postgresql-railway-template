@@ -17,7 +17,7 @@ export default function Index() {
   return (
     <Box>
       <Flex justify="between">
-        <Heading size="6">Remix Postgres Railway template</Heading>
+        <Heading size="6">Remix PostgreSQL Railway template</Heading>
         <ThemeSwitcher />
       </Flex>
       <p>
