@@ -1,0 +1,26 @@
+.ThemeSwitcher {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ThemeSwitcher .DarkTheme,
+.ThemeSwitcher .LightTheme {
+  opacity: 0;
+  transition: opacity 100ms linear, all 400ms ease-in-out;
+}
+
+.ThemeSwitcher.dark .DarkTheme {
+  opacity: 1;
+  translate: 50%;
+}
+.ThemeSwitcher.dark .LightTheme {
+  translate: 150%;
+}
+
+.ThemeSwitcher.light .LightTheme {
+  opacity: 1;
+  translate: -50%;
+}
+.ThemeSwitcher.light .DarkTheme {
+  translate: -150%;
+}

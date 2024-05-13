@@ -1,0 +1,31 @@
+.Toast {
+  position: fixed;
+  opacity: 0;
+  top: 2.5rem;
+  right: -10rem;
+  transition: all 150ms;
+  max-width: 20rem;
+  z-index: 100;
+}
+
+.Toast.m-isInDom {
+  right: 2.5rem;
+  opacity: 1;
+}
+
+.ToastContent {
+  border: 2px solid;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-4);
+  white-space: pre-line;
+}
+
+.m-error .ToastContent {
+  border-color: var(--tomato-10);
+  background-color: var(--tomato-3);
+}
+
+.m-success .ToastContent {
+  border-color: var(--blue-10);
+  background-color: var(--blue-3);
+}
